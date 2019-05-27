@@ -1,0 +1,102 @@
+@import "../../../assets/colors";
+@import "../../../assets/fonts";
+
+
+.block {
+  width: 352px;
+  height: 126px;
+
+  box-sizing: border-box;
+  padding: 24px 24px 32px 24px;
+
+  background: $color_white;
+  border: 2px solid $color_purple;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  margin-right: 32px;
+  margin-bottom: 32px;
+
+  cursor: pointer;
+}
+
+.blockCheck {
+  @extend .block;
+
+  border: 4px solid #6B47FA;
+  padding: 22px 22px 30px 22px;
+}
+
+.text {
+  width: 256px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  font-family: $font-family-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;/* or 125% */
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: $color_firm_blue;
+}
+
+.title {
+  font-family: $font-family-bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;/* or 144% */
+  display: flex;
+  align-items: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: $color_firm_blue;
+
+  margin-bottom: 8px;
+}
+
+.check {
+  width: 32px;
+  height: 100%;
+
+  padding-top: 15px;
+  box-sizing: border-box;
+
+  margin-right: 16px;
+}
+
+.checkImg {
+  width: 32px;
+  height: 32px;
+
+  user-focus: none;
+  user-modify: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.textPrice {
+  @extend .text;
+
+  font-family: $font-family-semibold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;/* or 162% */
+
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: $color_blue;
+
+  white-space: pre-wrap;
+}

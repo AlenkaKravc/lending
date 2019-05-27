@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-y: scroll;
+}
+
+
+.ymaps-2-1-73-inner-panes{
+    filter: hue-rotate(240deg);
+    -ms-filter: hue-rotate(240deg);
+    -webkit-filter: hue-rotate(240deg);
+    -moz-filter: hue-rotate(240deg);
+    -o-filter: hue-rotate(240deg);
+}
